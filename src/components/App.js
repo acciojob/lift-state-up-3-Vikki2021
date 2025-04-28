@@ -5,15 +5,15 @@ import ChildComponent1 from "./ChildComponent1";
 import ChildComponent2 from "./ChildComponent2";
 
 const App = () => {
-  const [option, setOption] = useState("");
+  const [selectedOption, setSelectedOption] = useState("");
 
   function handleSubmit(option) {
-    // setOption(option);
-    setOption(()=>option);
+    setSelectedOption(() => option);
   }
 
   return (
     <div
+      className="parent"
       style={{
         backgroundColor: "lightgreen",
         margin: "10px",
@@ -24,7 +24,7 @@ const App = () => {
       <ChildComponent1 handleSubmit={handleSubmit} />
       <ChildComponent2 handleSubmit={handleSubmit} />
 
-      <div>Selected options : {option}</div>
+      <div>Selected options : {selectedOption}</div>
     </div>
   );
 }
