@@ -20,11 +20,11 @@ const App = () => {
         padding: "10px",
       }}
     >
-      <h1>Parent component</h1>
+      <h1>Parent Component</h1>
       <ChildComponent1 handleSubmit={handleSubmit} />
       <ChildComponent2 handleSubmit={handleSubmit} />
 
-      <div>Selected options : {selectedOption}</div>
+      <p>Selected options : {selectedOption}</p>
     </div>
   );
 }
