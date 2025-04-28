@@ -24,7 +24,7 @@ const App = () => {
       <ChildComponent1 handleSubmit={handleSubmit} />
       <ChildComponent2 handleSubmit={handleSubmit} />
 
-      <p>Selected options : {selectedOption}</p>
+      <p>Selected Option : {selectedOption}</p>
     </div>
   );
 }
